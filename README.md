@@ -7,5 +7,7 @@ The individual boards of each turn will be printed, as well as the result of the
 
 [Small chance the program bugs out and produces an error.]
 
-
 This was made as an assignment for my computer science class
+
+
+ 

@@ -52,3 +52,6 @@ def tic_tac_toe():
         random_move(board, "X")
         print(board)
     return winner(board)
+
+if __name__ == '__main__':
+    tic_tac_toe()

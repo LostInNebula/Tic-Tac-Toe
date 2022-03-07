@@ -46,11 +46,12 @@ def tic_tac_toe():
 
     random_move(board, "O")
     random_move(board, "X")
-    while winner(board) == "-" and winner(board) != "X" and winner(board) != "O":
+    while winner(board) == "-" and winner(board) != "X" and winner(board) != "O" and open_spots(board) != []:
         random_move(board, "O")
         print(board)
-        random_move(board, "X")
-        print(board)
+        if winner(board) != "O" and open_spots(board) != []:
+            random_move(board, "X")
+            print(board)
     return winner(board)
 
 if __name__ == '__main__':
